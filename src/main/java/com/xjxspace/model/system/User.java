@@ -1,4 +1,4 @@
-package com.xjxspace.model;
+package com.xjxspace.model.system;
 
 import java.util.Date;
 

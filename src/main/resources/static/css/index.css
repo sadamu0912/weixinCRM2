@@ -130,6 +130,8 @@ a:hover,a:active,a:focus{outline:none;text-decoration:none;color:#72afd2}
 .content-wrapper .content-tabs .roll-right.btn-group button{width:80px}
 .content-wrapper .content-tabs .roll-right.tabExit{background:#fff;height:39px;width:40px;outline:0}
 .content-wrapper .content-tabs .dropdown-menu{border:solid 1px #ccc;border-top-left-radius:0px;border-top-right-radius:0px;right:-1px;}
-
+.progress{
+	width:200px;
+}
 
 

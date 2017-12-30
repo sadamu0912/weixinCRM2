@@ -14,8 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.xjxspace.mapper.UserMapper;
-import com.xjxspace.model.User;
+
+import com.xjxspace.mapper.system.UserMapper;
+import com.xjxspace.model.system.User;
 import com.xjxspace.util.Common;
 @WebFilter
 public class LoginFilter  implements Filter {

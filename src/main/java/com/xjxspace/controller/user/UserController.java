@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.xjxspace.common.RestResult;
-import com.xjxspace.mapper.UserMapper;
+import com.xjxspace.mapper.system.UserMapper;
 
 
 @Controller
