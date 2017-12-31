@@ -1,42 +1,50 @@
 package com.xjxspace.model.system;
 
-import java.util.Date;
 
-public class User {
-    /**
+import com.xjxspace.model.frame.Record;
+
+public class User  extends Record {
+
+	private static final long serialVersionUID =6931939270939159104L;
+	/**
      * 主键
      */
-    private Integer id;
+    private String userId;
 
     /**
      * 姓名
      */
-    private String username;
+    private String userName;
+    private String userNumber;
 
-    /**
-     * 生日
-     */
     private String password;
 
-    /**
-     * 地址
-     */
     private Integer enable;
+    
+    private Integer del;
 
-	public Integer getId() {
-		return id;
+	public String getUserId() {
+		return userId;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getUserNumber() {
+		return userNumber;
+	}
+
+	public void setUserNumber(String userNumber) {
+		this.userNumber = userNumber;
 	}
 
 	public String getPassword() {
@@ -54,6 +62,17 @@ public class User {
 	public void setEnable(Integer enable) {
 		this.enable = enable;
 	}
+
+	public Integer getDel() {
+		return del;
+	}
+
+	public void setDel(Integer del) {
+		this.del = del;
+	}
+
+	
+
 
    
 }

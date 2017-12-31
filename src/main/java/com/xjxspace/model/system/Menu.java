@@ -18,25 +18,24 @@ public class Menu extends Record {
 	 * 菜单图标
 	 */
 	private String menuIcon;
-	
 	private String menuHref;
-	
 	/**
 	 *菜单目标的类型   target=expand 展开   target = iframe 加载iframe页面
 	 */
 	private String targetType;
-	
 	private Integer menuDepth;
-	
 	/**
 	 * 排序
 	 */
 	private Integer menuOrder;
-	
 	/**
 	 * 菜单描述
 	 */
 	private String menuDesc;
+	private String menuParentCode;
+	private String moduleId;
+	private Integer del;
+	
 
 	public String getMenuId() {
 		return menuId;
@@ -116,6 +115,30 @@ public class Menu extends Record {
 
 	public void setMenuDesc(String menuDesc) {
 		this.menuDesc = menuDesc;
+	}
+
+	public String getModuleId() {
+		return moduleId;
+	}
+
+	public void setModuleId(String moduleId) {
+		this.moduleId = moduleId;
+	}
+
+	public String getMenuParentCode() {
+		return menuParentCode;
+	}
+
+	public void setMenuParentCode(String menuParentCode) {
+		this.menuParentCode = menuParentCode;
+	}
+
+	public Integer getDel() {
+		return del;
+	}
+
+	public void setDel(Integer del) {
+		this.del = del;
 	}
 	
 	

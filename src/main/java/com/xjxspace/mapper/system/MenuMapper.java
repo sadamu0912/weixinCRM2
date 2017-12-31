@@ -1,5 +1,9 @@
 package com.xjxspace.mapper.system;
 
-public interface MenuMapper {
+import java.util.List;
 
+import com.xjxspace.model.system.Menu;
+
+public interface MenuMapper {
+	List<Menu> getAllMenus();
 }

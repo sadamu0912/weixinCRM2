@@ -1,4 +1,4 @@
-package com.xjxspace.controller.user;
+package com.xjxspace.controller.system;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,9 +15,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-
-import com.xjxspace.common.RestResult;
 import com.xjxspace.mapper.system.UserMapper;
+import com.xjxspace.model.frame.RestResult;
 
 
 @Controller
@@ -43,8 +42,6 @@ public class UserController {
 		return "user/list";
 	}
 	
-	/*@RequestMapping(value="/add",RequestMethod=POST)
-	public void addUser(@re)*/
 	
 	@RequestMapping(value="/upload" ,method = RequestMethod.POST)
 	@ResponseBody

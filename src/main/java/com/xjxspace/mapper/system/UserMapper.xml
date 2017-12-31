@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.xjxspace.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="com.xjxspace.model.User" >
-    <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="username" property="username" jdbcType="VARCHAR" />
+<mapper namespace="com.xjxspace.mapper.system.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.xjxspace.model.system.User" >
+    <id column="increment_id" property="incrementId" jdbcType="INTEGER" />
+     <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="del" property="del" jdbcType="INTEGER" />
+    <result column="user_number" property="userNumber" jdbcType="VARCHAR" />
     <result column="enable" property="enable" jdbcType="INTEGER" />
+     <result column="create_userid" property="createUserId" jdbcType="VARCHAR" />
+                <result column="create_time" property="createTime"/>
+                 <result column="update_userid" property="updateUserId" jdbcType="VARCHAR" />
+                <result column="update_time" property="updateTime"/>
   </resultMap>
   
   <sql id="Base_Column_List" >
-    id, username, password, enable
+    user_id, user_name, password, del,create_userid,create_time,update_userid,update_time
   </sql>
  	<select id="getAllUser" resultMap="BaseResultMap">
  		select
@@ -22,7 +29,7 @@
  		<include refid="Base_Column_List"/>
  		from user where 1=1 
  		<if test="userName !=null">
- 		 and username=#{userName}
+ 		 and user_name=#{userName}
  		</if>
  	</select>
 </mapper>

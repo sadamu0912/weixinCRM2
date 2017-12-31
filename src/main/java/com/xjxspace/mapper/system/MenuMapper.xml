@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.xjxspace.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="com.xjxspace.model.User" >
-    <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="username" property="username" jdbcType="VARCHAR" />
-    <result column="password" property="password" jdbcType="VARCHAR" />
-    <result column="enable" property="enable" jdbcType="INTEGER" />
+<mapper namespace="com.xjxspace.mapper.system.MenuMapper" >
+  <resultMap id="BaseResultMap" type="com.xjxspace.model.system.Menu" >
+    <id column="increment_id" property="incrementId" jdbcType="INTEGER" />
+    <result column="menu_id" property="menuId" jdbcType="VARCHAR" />
+    <result column="menu_parentid" property="menuParentId" jdbcType="VARCHAR" />
+    <result column="menu_code" property="menuCode" jdbcType="VARCHAR" />
+     <result column="menu_name" property="menuName" jdbcType="VARCHAR" />
+      <result column="menu_icon" property="menuIcon" jdbcType="VARCHAR" />
+       <result column="menu_href" property="menuHref" jdbcType="VARCHAR" />
+        <result column="target_type" property="targetType" jdbcType="VARCHAR" />
+         <result column="menu_depth" property="menuDepth" jdbcType="INTEGER" />
+          <result column="menu_order" property="menuOrder" jdbcType="INTEGER" />
+           <result column="menu_desc" property="menuDesc" jdbcType="VARCHAR" />
+            <result column="menu_parentcode" property="menuParentCode" jdbcType="VARCHAR" />
+             <result column="module_id" property="moduleId" jdbcType="VARCHAR" />
+              <result column="del" property="del" jdbcType="INTEGER" />
+               <result column="create_userid" property="createUserId" jdbcType="VARCHAR" />
+                <result column="create_time" property="createTime"/>
+                 <result column="update_userid" property="updateUserId" jdbcType="VARCHAR" />
+                <result column="update_time" property="updateTime"/>
   </resultMap>
   
   <sql id="Base_Column_List" >
-    id, username, password, enable
+    menu_id, menu_parentid, menu_code, menu_name,menu_icon,menu_href,target_type,menu_depth,menu_order,menu_desc,
+    menu_parentcode,module_id,del,create_userid,create_time,update_userid,update_time
   </sql>
- 	<select id="getAllUser" resultMap="BaseResultMap">
+ 	<select id="getAllMenus" resultMap="BaseResultMap">
  		select
  		<include refid="Base_Column_List"/>
- 		from user
+ 		from conf_menu
  	</select>
  	
- 	<select id="getUserByUserName" resultMap="BaseResultMap" parameterType="HashMap" >
- 		select
- 		<include refid="Base_Column_List"/>
- 		from user where 1=1 
- 		<if test="userName !=null">
- 		 and username=#{userName}
- 		</if>
- 	</select>
+ 	
 </mapper>
