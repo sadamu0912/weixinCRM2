@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeteaf.org">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>小程序后台管理系统</title>
+     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+    <link rel="stylesheet" th:href="@{/component/bootstrap/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/skins/allskins.css}" />
+     <link rel="stylesheet" th:href="@{/css/frame/frame.css}" />	
+     <link rel="stylesheet" th:href="@{/css/project/pageList.css}" />
+</head>
+<body>
+	<div class="main">
+		<div id="queryHead" class="container">
+			<div class="row" style="margin-top:10px;">
+				<div class="form-inline">
+						<div class="form-group">
+						<label  for="createTime">创建时间:</label>
+						<input type="text" class="form-control date" id="sartTime" name="startTime"/>
+						~<input type="text" class="form-control date" id="endTime" name="endTime"/>
+						</div>
+						
+						 <div class="form-group">
+              				  <input type="text" class="form-control" placeholder="请输入项目名称" id="searchProjectBtn" />
+          				  	<button class="navSearchBtn" style="width: 100px; height: 36px; top: 0px;">搜索</button>
+          				  </div>
+          				  <div class="form-group">
+          				  	<button type="button" class="btn btn-success">新增项目</button>
+          				  </div>
+						
+					</div>
+			</div>
+		</div>
+		  
+	 </div>
+	  <script th:src="@{/component/jquery/jQuery-2.2.0.min.js}"></script>
+     <script th:src="@{/component/bootstrap/js/bootstrap.min.js}"></script>
+     <script th:src="@{/js/project/list.js}"></script>
+</body>
+</html>

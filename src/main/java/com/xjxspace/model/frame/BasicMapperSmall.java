@@ -3,7 +3,7 @@ package com.xjxspace.model.frame;
 import java.util.List;
 import java.util.Map;
 
-public interface BasicMapperFull<T> {
+public interface BasicMapperSmall<T>  {
 	/**
 	 * 获取所有记录
 	 * @param params
@@ -36,18 +36,4 @@ public interface BasicMapperFull<T> {
 	
 	
 	Integer updateRecordById(Map<String,Object> params);
-	
-	
-	Integer updateRecordsByIds(Map<String,Object> params);
-	
-	/**
-	 * 批量新增记录
-	 * @param params
-	 * @return
-	 */
-	Integer addRecordsBatch(List<Map<String,Object>> params);
-	
-	
-	
-	
 }

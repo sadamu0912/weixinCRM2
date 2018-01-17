@@ -17,16 +17,16 @@ h2{font-size:15px;}
 /**
 列表样式 
 */
-.main{width:1100px;margin:0 auto;overflow:hidden;}
+.main{width:100%;margin:0 auto;overflow:hidden;}
 .titlefont{font-size:14px;font-weight:bold;color:#03a8b1;padding-left:17px;padding-top:17px;float:left;}
 .titlefont a{font-size:14px;font-weight:bold;color:#03a8b1;}
 .titlefont a:hover{color:#eb7b0e;}
 .more{float:right;padding-right:20px;padding-top:19px;}
 .more a,.morelist a{color:#03a8b1;}
 .more a:hover,.morelist a:hover{color:#eb7b0e;}
-.box{width:1100px;float:left;_float:none;margin-top:28px;background:#fff;border: solid 1px #dededf;}
+.box{width:100%;float:left;_float:none;margin-top:28px;background:#fff;border: solid 1px #dededf;}
 .list{clear:both;padding-top:11px;padding-left:5px;_padding-left:7px;}
-.list li{float:left;width:200px;margin-right:8px;margin-left:8px;_margin-right:4px;_margin-left:4px;padding-bottom:20px;}
+.list li{float:left;width:18%;margin-right:8px;margin-left:8px;_margin-right:4px;_margin-left:4px;padding-bottom:20px;}
 .list li h2{font-weight:normal;padding-left:7px; display:block; float:left;width:200px;margin-top:8px;*line-height:16px; height:15px; overflow:hidden}
 .listpic{width:200px;height:200px;}
 .listpic img{width:180px;height:200px;margin-left:10px;margin-right:10px;}
