@@ -23,4 +23,6 @@ public class ProjectController {
 	public String getProjectSimpleList(@RequestParam Map<String,Object> params,Model model){
 		return "project/list";
 	}
+	
+	
 }
