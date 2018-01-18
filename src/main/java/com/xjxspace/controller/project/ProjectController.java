@@ -37,10 +37,10 @@ public class ProjectController extends ControllerHandler{
 	
 	/**
 	 * 项目分页列表
-	 */
+	 *//*
 	@RequestMapping(value="/pageList",method=RequestMethod.GET)
 	public String getProjectPageList(@RequestParam Map<String,Object> params,Model model){
 		return "project/pageList";
-	}
+	}*/
 	
 }
