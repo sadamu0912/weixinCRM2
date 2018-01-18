@@ -26,24 +26,463 @@
                 <result column="update_time" property="updateTime"/>
   </resultMap>
   
-  <sql id="Base_Column_List" >
-    project_id, project_name, project_progress, 
-    project_state,project_state_code,
-    project_image,project_view_count,project_love_count,project_comment_count,
-    project_customer_city,project_customer_city_code,project_customer_name,project_customer_phone,
-    project_cusomer_email,project_type_name,project_type_code,del,create_userid
-    create_time,update_userid,update_time
-  </sql>
-  <sql id="Simple_Column_List" >
-    project_id, project_name,
-    project_image,project_view_count,project_love_count,project_comment_count,
-   project_type_name,project_type_code,del
-  </sql>
- 	<select id="getAllProjects" resultMap="BaseResultMap">
- 		select
- 		<include refid="Simple_Column_List"/>
+ 
+  <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        increment_id AS incrementId, 
+        project_id AS projectId, 
+        project_name AS projectName,
+         project_progress AS projectProgress, 
+         project_state AS projectState,
+          project_image AS projectImage,
+           project_view_count AS projectViewCount,
+            project_love_count AS projectLoveCount, 
+            project_comment_count AS projectCommentCount, 
+            project_customer_city AS projectCustomerCity, 
+            project_customer_city_code AS projectCustomerCityCode, 
+            project_customer_name AS projectCustomerName, 
+            project_customer_phone AS projectCustomerPhone, 
+            project_cusomer_email AS projectCusomerEmail,
+             project_type_name AS projectTypeName, 
+             project_type_code AS projectTypeCode, 
+             create_userid AS createUserid, 
+             create_time AS createTime, 
+             update_userid AS updateUserid,
+              update_time AS updateTime, del,
+               project_state_code AS projectStateCode
+    </sql>
+    
+ 	<select id="getAllRecords" resultMap="BaseResultMap">
+	select
+ 		<include refid="Base_Column_List"/>
  		from project
  	</select>
+ 	
+ 	
+  <!-- 获取记录总数-->	
+ <select id="getRecordsCount" parameterType="HashMap" resultType="Integer">
+	select count(*) from project
+	where 1=1
+	<if test="projectId !=null">
+		and project_id =#{projectId}
+	</if>
+	<if test="projectName !=null">
+		and project_name =#{projectName}
+	</if>
+	<if test="projectProgress !=null">
+		and project_progress =#{projectProgress}
+	</if>
+	<if test="projectState !=null">
+		and project_state =#{projectState}
+	</if>
+	<if test="projectImage !=null">
+		and project_image =#{projectImage}
+	</if>
+	<if test="projectViewCount !=null">
+		and project_view_count =#{projectViewCount}
+	</if>
+	<if test="projectLoveCount !=null">
+		and project_love_count =#{projectLoveCount}
+	</if>
+	<if test="projectCommentCount !=null">
+		and project_comment_count =#{projectCommentCount}
+	</if>
+	<if test="projectCustomerCity !=null">
+		and project_customer_city =#{projectCustomerCity}
+	</if>
+	<if test="projectCustomerCityCode !=null">
+		and project_customer_city_code =#{projectCustomerCityCode}
+	</if>
+	<if test="projectCustomerName !=null">
+		and project_customer_name =#{projectCustomerName}
+	</if>
+	<if test="projectCustomerPhone !=null">
+		and project_customer_phone =#{projectCustomerPhone}
+	</if>
+	<if test="projectCusomerEmail !=null">
+		and project_cusomer_email =#{projectCusomerEmail}
+	</if>
+	<if test="projectTypeName !=null">
+		and project_type_name =#{projectTypeName}
+	</if>
+	<if test="projectTypeCode !=null">
+		and project_type_code =#{projectTypeCode}
+	</if>
+	<if test="createUserid !=null">
+		and create_userid =#{createUserid}
+	</if>
+	<if test="createTime !=null">
+		and create_time =#{createTime}
+	</if>
+	<if test="updateUserid !=null">
+		and update_userid =#{updateUserid}
+	</if>
+	<if test="updateTime !=null">
+		and update_time =#{updateTime}
+	</if>
+	<if test="del !=null">
+		and del =#{del}
+	</if>
+	<if test="projectStateCode !=null">
+		and project_state_code =#{projectStateCode}
+	</if>
+ 	</select>
+ 	 <!-- 根据条件查询数据-->	
+ 	<select id="getListByCondition" parameterType="HashMap" resultMap="BaseResultMap">
+ 	select
+ 		<include refid="Base_Column_List"/>
+ 		from project
+ 		where 1=1
+	<if test="projectId !=null">
+		and project_id =#{projectId}
+	</if>
+	<if test="projectName !=null">
+		and project_name =#{projectName}
+	</if>
+	<if test="projectProgress !=null">
+		and project_progress =#{projectProgress}
+	</if>
+	<if test="projectState !=null">
+		and project_state =#{projectState}
+	</if>
+	<if test="projectImage !=null">
+		and project_image =#{projectImage}
+	</if>
+	<if test="projectViewCount !=null">
+		and project_view_count =#{projectViewCount}
+	</if>
+	<if test="projectLoveCount !=null">
+		and project_love_count =#{projectLoveCount}
+	</if>
+	<if test="projectCommentCount !=null">
+		and project_comment_count =#{projectCommentCount}
+	</if>
+	<if test="projectCustomerCity !=null">
+		and project_customer_city =#{projectCustomerCity}
+	</if>
+	<if test="projectCustomerCityCode !=null">
+		and project_customer_city_code =#{projectCustomerCityCode}
+	</if>
+	<if test="projectCustomerName !=null">
+		and project_customer_name =#{projectCustomerName}
+	</if>
+	<if test="projectCustomerPhone !=null">
+		and project_customer_phone =#{projectCustomerPhone}
+	</if>
+	<if test="projectCusomerEmail !=null">
+		and project_cusomer_email =#{projectCusomerEmail}
+	</if>
+	<if test="projectTypeName !=null">
+		and project_type_name =#{projectTypeName}
+	</if>
+	<if test="projectTypeCode !=null">
+		and project_type_code =#{projectTypeCode}
+	</if>
+	<if test="createUserid !=null">
+		and create_userid =#{createUserid}
+	</if>
+	<if test="createTime !=null">
+		and create_time =#{createTime}
+	</if>
+	<if test="updateUserid !=null">
+		and update_userid =#{updateUserid}
+	</if>
+	<if test="updateTime !=null">
+		and update_time =#{updateTime}
+	</if>
+	<if test="del !=null">
+		and del =#{del}
+	</if>
+	<if test="projectStateCode !=null">
+		and project_state_code =#{projectStateCode}
+	</if>
+<if test="startTime !=null and endTime !=null">
+		and create_time between #{startTime} and #{endTime}
+	</if>
+	order by create_time desc
+ 	</select>
+ 	 <!-- 根据条件查询数据   有分页数据-->	
+ <select id="getListwithPageInfo" parameterType="HashMap" resultMap="BaseResultMap">
+ 	select
+ 		<include refid="Base_Column_List"/>
+ 		from project
+ 		where 1=1
+ 	<if test="projectId !=null">
+		and project_id =#{projectId}
+	</if>
+	<if test="projectName !=null">
+		and project_name =#{projectName}
+	</if>
+	<if test="projectProgress !=null">
+		and project_progress =#{projectProgress}
+	</if>
+	<if test="projectState !=null">
+		and project_state =#{projectState}
+	</if>
+	<if test="projectImage !=null">
+		and project_image =#{projectImage}
+	</if>
+	<if test="projectViewCount !=null">
+		and project_view_count =#{projectViewCount}
+	</if>
+	<if test="projectLoveCount !=null">
+		and project_love_count =#{projectLoveCount}
+	</if>
+	<if test="projectCommentCount !=null">
+		and project_comment_count =#{projectCommentCount}
+	</if>
+	<if test="projectCustomerCity !=null">
+		and project_customer_city =#{projectCustomerCity}
+	</if>
+	<if test="projectCustomerCityCode !=null">
+		and project_customer_city_code =#{projectCustomerCityCode}
+	</if>
+	<if test="projectCustomerName !=null">
+		and project_customer_name =#{projectCustomerName}
+	</if>
+	<if test="projectCustomerPhone !=null">
+		and project_customer_phone =#{projectCustomerPhone}
+	</if>
+	<if test="projectCusomerEmail !=null">
+		and project_cusomer_email =#{projectCusomerEmail}
+	</if>
+	<if test="projectTypeName !=null">
+		and project_type_name =#{projectTypeName}
+	</if>
+	<if test="projectTypeCode !=null">
+		and project_type_code =#{projectTypeCode}
+	</if>
+	<if test="createUserid !=null">
+		and create_userid =#{createUserid}
+	</if>
+	<if test="createTime !=null">
+		and create_time =#{createTime}
+	</if>
+	<if test="updateUserid !=null">
+		and update_userid =#{updateUserid}
+	</if>
+	<if test="updateTime !=null">
+		and update_time =#{updateTime}
+	</if>
+	<if test="del !=null">
+		and del =#{del}
+	</if>
+	<if test="projectStateCode !=null">
+		and project_state_code =#{projectStateCode}
+	</if>
+	<if test="startTime !=null and endTime !=null">
+		and create_time between #{startTime} and #{endTime}
+	</if>
+	order by create_time desc
+	<if test="pageInfo!=null">
+		limit #{pageInfo.start},#{pageInfo.offset}
+	</if>
+ </select>	
+  <!-- 新增记录-->	
+ <insert id="addRecord" parameterType="HashMap">
+ 	insert into project
+ 		<trim prefix="(" suffix=")" suffixOverrides=",">
+	<if test="projectId !=null">
+		 project_id,
+	</if>
+	<if test="projectName !=null">
+		 project_name,
+	</if>
+	<if test="projectProgress !=null">
+		 project_progress,
+	</if>
+	<if test="projectState !=null">
+		 project_state,
+	</if>
+	<if test="projectImage !=null">
+		 project_image,
+	</if>
+	<if test="projectViewCount !=null">
+		 project_view_count,
+	</if>
+	<if test="projectLoveCount !=null">
+		 project_love_count,
+	</if>
+	<if test="projectCommentCount !=null">
+		 project_comment_count,
+	</if>
+	<if test="projectCustomerCity !=null">
+		 project_customer_city,
+	</if>
+	<if test="projectCustomerCityCode !=null">
+		 project_customer_city_code,
+	</if>
+	<if test="projectCustomerName !=null">
+		 project_customer_name,
+	</if>
+	<if test="projectCustomerPhone !=null">
+		 project_customer_phone,
+	</if>
+	<if test="projectCusomerEmail !=null">
+		 project_cusomer_email,
+	</if>
+	<if test="projectTypeName !=null">
+		 project_type_name,
+	</if>
+	<if test="projectTypeCode !=null">
+		 project_type_code,
+	</if>
+	<if test="createUserid !=null">
+		 create_userid,
+	</if>
+	<if test="createTime !=null">
+		 create_time,
+	</if>
+	<if test="updateUserid !=null">
+		 update_userid,
+	</if>
+	<if test="updateTime !=null">
+		 update_time,
+	</if>
+	<if test="del !=null">
+		 del,
+	</if>
+	<if test="projectStateCode !=null">
+		 project_state_code,
+	</if>
+ 		</trim>
+ 		<trim prefix="values (" suffix=")" suffixOverrides=",">
+	<if test="projectId !=null">
+		#{projectId},
+	</if>
+	<if test="projectName !=null">
+		#{projectName},
+	</if>
+	<if test="projectProgress !=null">
+		#{projectProgress},
+	</if>
+	<if test="projectState !=null">
+		#{projectState},
+	</if>
+	<if test="projectImage !=null">
+		#{projectImage},
+	</if>
+	<if test="projectViewCount !=null">
+		#{projectViewCount},
+	</if>
+	<if test="projectLoveCount !=null">
+		#{projectLoveCount},
+	</if>
+	<if test="projectCommentCount !=null">
+		#{projectCommentCount},
+	</if>
+	<if test="projectCustomerCity !=null">
+		#{projectCustomerCity},
+	</if>
+	<if test="projectCustomerCityCode !=null">
+		#{projectCustomerCityCode},
+	</if>
+	<if test="projectCustomerName !=null">
+		#{projectCustomerName},
+	</if>
+	<if test="projectCustomerPhone !=null">
+		#{projectCustomerPhone},
+	</if>
+	<if test="projectCusomerEmail !=null">
+		#{projectCusomerEmail},
+	</if>
+	<if test="projectTypeName !=null">
+		#{projectTypeName},
+	</if>
+	<if test="projectTypeCode !=null">
+		#{projectTypeCode},
+	</if>
+	<if test="createUserid !=null">
+		#{createUserid},
+	</if>
+	<if test="createTime !=null">
+		#{createTime},
+	</if>
+	<if test="updateUserid !=null">
+		#{updateUserid},
+	</if>
+	<if test="updateTime !=null">
+		#{updateTime},
+	</if>
+	<if test="del !=null">
+		#{del},
+	</if>
+	<if test="projectStateCode !=null">
+		#{projectStateCode},
+	</if>
+ 		</trim>
+ </insert>
+   <!-- 更新记录 根据id-->	
+ <update id="updateRecordById" parameterType="HashMap">
+ 	update project
+ 	<set>
+	<if test="projectId !=null">
+		 project_id =#{projectId},
+	</if>
+	<if test="projectName !=null">
+		 project_name =#{projectName},
+	</if>
+	<if test="projectProgress !=null">
+		 project_progress =#{projectProgress},
+	</if>
+	<if test="projectState !=null">
+		 project_state =#{projectState},
+	</if>
+	<if test="projectImage !=null">
+		 project_image =#{projectImage},
+	</if>
+	<if test="projectViewCount !=null">
+		 project_view_count =#{projectViewCount},
+	</if>
+	<if test="projectLoveCount !=null">
+		 project_love_count =#{projectLoveCount},
+	</if>
+	<if test="projectCommentCount !=null">
+		 project_comment_count =#{projectCommentCount},
+	</if>
+	<if test="projectCustomerCity !=null">
+		 project_customer_city =#{projectCustomerCity},
+	</if>
+	<if test="projectCustomerCityCode !=null">
+		 project_customer_city_code =#{projectCustomerCityCode},
+	</if>
+	<if test="projectCustomerName !=null">
+		 project_customer_name =#{projectCustomerName},
+	</if>
+	<if test="projectCustomerPhone !=null">
+		 project_customer_phone =#{projectCustomerPhone},
+	</if>
+	<if test="projectCusomerEmail !=null">
+		 project_cusomer_email =#{projectCusomerEmail},
+	</if>
+	<if test="projectTypeName !=null">
+		 project_type_name =#{projectTypeName},
+	</if>
+	<if test="projectTypeCode !=null">
+		 project_type_code =#{projectTypeCode},
+	</if>
+	<if test="createUserid !=null">
+		 create_userid =#{createUserid},
+	</if>
+	<if test="createTime !=null">
+		 create_time =#{createTime},
+	</if>
+	<if test="updateUserid !=null">
+		 update_userid =#{updateUserid},
+	</if>
+	<if test="updateTime !=null">
+		 update_time =#{updateTime},
+	</if>
+	<if test="del !=null">
+		 del =#{del},
+	</if>
+	<if test="projectStateCode !=null">
+		 project_state_code =#{projectStateCode},
+	</if>
+ 	</set>
+ 	where 1=1 
+	and project_id =#{projectId}	
+ </update>
  	
  	
 </mapper>
