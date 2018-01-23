@@ -11,3 +11,15 @@
 .date{
 	width:40% !important;
 }
+.canOrderTHead{
+	cursor:pointer;
+}
+thead{
+background:#80d2f2;	
+}
+thead td{
+text-align:center;
+}
+.main-content{
+	width:100%;
+}

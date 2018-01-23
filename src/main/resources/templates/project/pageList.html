@@ -7,6 +7,7 @@
 	<meta content="" name="description" />
 	<meta content="" name="author" />
     <link rel="stylesheet" th:href="@{/component/bootstrap/css/bootstrap.min.css}" />
+     <link rel="stylesheet" th:href="@{/component/magicCheck/magic-check.css}" />
     <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}" />
     <link rel="stylesheet" th:href="@{/css/skins/allskins.css}" />
      <link rel="stylesheet" th:href="@{/css/project/list.css}" />
@@ -15,6 +16,7 @@
 </head>
 <body>
 	<div class="main">
+	<!-- 查询头部 -->
 		<div id="queryHead" class="container">
 			<div class="row" style="margin-top:10px;">
 				<div class="form-inline">
@@ -30,11 +32,37 @@
           				  <div class="form-group">
           				  	<button type="button" class="btn btn-success" style="height: 34px;margin-top:4px;">新增项目</button>
           				  </div>
+          				  <div class="form-group">
+          				  	<button type="button" class="btn btn-warning" style="height: 34px;margin-top:4px;">批量操作</button>
+          				  </div>
 						
 					</div>
 			</div>
 		</div>
+		<!-- 项目表格 -->
+		<div class="main-content">
+			<table  id="projectTable" class="table" th:fragment="resultList" >
+<!-- 			th:attr="data-page-total=${pageInfo.total},data-page-current=${pageInfo.current}, -->
+<!-- 			data-page-start=${pageInfo.start},data-page-offset=${pagelnfo.offset},data-page-count=${pageInfo.count}"> -->
+				<thead>
+					<tr>
+					<td>项目名称 </td>
+					<td>项目类型</td>
+					<td>项目对接联系人</td>
+					<td>联系电话</td>
+					<td>项目状态</td>
+					<td class="canOrderTHead viewCount" >项目热度<i class="fa fa-sort-up"> </i></td>
+					<td class="canOrderTHead projectProgress">项目进度 <i class="fa fa-sort-up"> </i></td>
+					<td class="canOrderTHead createTime">创建时间 <i class="fa fa-sort-up"> </i></td>
+					</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					</table>
+
+	 	
 	 </div>
+	  </div>
 	  <script th:src="@{/component/jquery/jQuery-2.2.0.min.js}"></script>
      <script th:src="@{/component/bootstrap/js/bootstrap.min.js}"></script>
      <script th:src="@{/js/project/list.js}"></script>
