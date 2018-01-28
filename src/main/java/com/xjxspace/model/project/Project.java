@@ -1,8 +1,9 @@
 package com.xjxspace.model.project;
 
+
 import com.xjxspace.model.frame.Record;
 
-public class Project extends Record {
+public class Project  extends Record{
 	private static final long serialVersionUID =6931939270939159108L;
 	
 	private String projectId;
@@ -69,9 +70,6 @@ public class Project extends Record {
 	public void setProjectProgress(Float projectProgress) {
 		this.projectProgress = projectProgress;
 	}
-	
-	
-	
 	public String getProjectState() {
 		return projectState;
 	}
@@ -156,6 +154,7 @@ public class Project extends Record {
 	public void setDel(Integer del) {
 		this.del = del;
 	}
+	
 	
 	
 }

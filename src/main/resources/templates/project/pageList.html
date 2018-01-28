@@ -32,7 +32,7 @@
           				  <div class="form-group">
           				  	<button type="button" class="btn btn-success" style="height: 34px;margin-top:4px;">新增项目</button>
           				  </div>
-          				  <div class="form-group">
+          				 <div class="form-group">
           				  	<button type="button" class="btn btn-warning" style="height: 34px;margin-top:4px;">批量操作</button>
           				  </div>
 						
@@ -41,12 +41,15 @@
 		</div>
 		<!-- 项目表格 -->
 		<div class="main-content">
-			<table  id="projectTable" class="table" th:fragment="resultList" >
-<!-- 			th:attr="data-page-total=${pageInfo.total},data-page-current=${pageInfo.current}, -->
-<!-- 			data-page-start=${pageInfo.start},data-page-offset=${pagelnfo.offset},data-page-count=${pageInfo.count}"> -->
+			<table  id="projectTable" class="table table-hover" th:fragment="resultList" 
+ 			th:attr="data-page-total=${pageInfo.total},data-page-current=${pageInfo.current},
+ 			data-page-start=${pageInfo.start},data-page-offset=${pageInfo.offset},data-page-count=${pageInfo.count}"> 
 				<thead>
 					<tr>
-					<td>项目名称 </td>
+					<td>
+						&emsp;
+					 </td>
+					<td>项目名称</td>
 					<td>项目类型</td>
 					<td>项目对接联系人</td>
 					<td>联系电话</td>
@@ -54,10 +57,38 @@
 					<td class="canOrderTHead viewCount" >项目热度<i class="fa fa-sort-up"> </i></td>
 					<td class="canOrderTHead projectProgress">项目进度 <i class="fa fa-sort-up"> </i></td>
 					<td class="canOrderTHead createTime">创建时间 <i class="fa fa-sort-up"> </i></td>
+					
 					</tr>
 					</thead>
 					<tbody>
-					</tbody>
+						<tr th:if="${result!=null}" th:each="item:${result}" >
+							<td style="width:3%;">
+								<input  type="checkbox" class="magic-checkbox" name="projectId" th:attr="data-projectId=${item.projectId}" th:id="${item.projectId}"/><label th:attr="for=${item.projectId}">&nbsp;</label>
+							</td>
+							<td style="width:25%;" class="projectNameContent">
+								<div class="projectName"  th:if="${item.projectName!=null}" th:text="${item.projectName}">&nbsp;</div>
+								<div class="operationList">
+									<a href="javascript:void(0)" ><img src="/images/edit.png" class="edit hide"/>
+									</a>
+									
+								</div>
+							</td>
+							<td th:if="${item.projectTypeName!=null}" th:text="${item.projectTypeName}"></td>
+							<td th:if="${item.projectCustomerName!=null}" th:text="${item.projectCustomerName}"></td>
+							<td th:if="${item.projectCustomerPhone!=null}" th:text="${item.projectCustomerPhone}"></td>
+							<td th:if="${item.projectState!=null}" th:text="${item.projectState}"></td>
+							
+							<td th:if="${item.projectViewCount!=null}" th:text="${item.projectViewCount}"></td>
+							<td th:if="${item.projectProgress!=null}" >
+							<div class="progress">
+							    <div class="progress-bar progress-bar-success" th:attr="data-progress=${item.projectProgress}">
+							        <span class="progressText"> </span>
+							    </div>
+								</div>
+							</td>
+							<td th:if="${item.createTime!=null}" th:text="${#dates.format(item.createTime, 'yyyy-MM-dd HH:mm')}"></td>
+						</tr>
+			</tbody>
 					</table>
 
 	 	
@@ -65,6 +96,7 @@
 	  </div>
 	  <script th:src="@{/component/jquery/jQuery-2.2.0.min.js}"></script>
      <script th:src="@{/component/bootstrap/js/bootstrap.min.js}"></script>
+     <script th:src="@{/js/common.js}"></script>
      <script th:src="@{/js/project/list.js}"></script>
 </body>
 </html>

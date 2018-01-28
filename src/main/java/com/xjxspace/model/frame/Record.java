@@ -2,6 +2,7 @@ package com.xjxspace.model.frame;
 
 import java.util.Date;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public abstract class Record implements Data{

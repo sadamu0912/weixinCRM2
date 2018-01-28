@@ -2,7 +2,7 @@
 全局样式
 */
 *{border:0;margin:0;  padding:0;}
-body{background:url(/images/project/bg.gif);font-family:'微软雅黑',Tahoma; margin:0 auto; font-size:12px}
+body{background:#fff;font-family:'微软雅黑',Tahoma; margin:0 auto; font-size:12px}
 ul{display:block;margin:0;padding:0;list-style:none;}
 li{display:block;margin:0;padding:0;list-style:none;}
 img{border:0;}

@@ -8,6 +8,8 @@
 			init:function(){
 				this.picHoverChangeOpacity();
 				this.changeSort();
+				this.displayOperation();
+				getProgressBar();
 			},
 			/**
 			 * 当鼠标停在图片上的时候，改变透明度
@@ -33,6 +35,14 @@
 					icon.removeClass('fa-sort-desc').addClass('fa-sort-up');	
 				}
 				
+			})
+		},
+		displayOperation:function(){
+			$('#projectTable').on('mouseenter','.projectNameContent',function(event){
+				$(this).find('img').removeClass('hide');
+			})
+			$('#projectTable').on('mouseleave','.projectNameContent',function(event){
+				$(this).find('img').addClass('hide');
 			})
 		}
 	}

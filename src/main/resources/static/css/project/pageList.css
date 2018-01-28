@@ -30,3 +30,14 @@ h2{font-size:15px;}
 .main-content{
 	margin-top:60px;
 }
+.edit{
+	width:35px;
+	height:35px;
+	border-radius:25px;
+	border:1px solid #499d47;
+}
+.projectName{
+	width:100px;
+	height:35px;
+	float:left;
+}

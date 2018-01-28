@@ -42,6 +42,14 @@ function loadFun(url){
 	oScript.src=url; 
 	oHead.appendChild( oScript); 
 }
+function getProgressBar(){
+	var progressBars= $('.progress-bar');
+	$.each(progressBars,function(index,el){
+	var	percent =$(el).attr('data-progress');
+	$(el).width(percent+"%");
+	$(el).find('.progressText').text(percent+"%");
+	})
+}
 /**
  * ajax方法 封装
  */
@@ -83,6 +91,7 @@ var httpHelper = {
 			});
 		}
 	}
+
 		
 		
 		

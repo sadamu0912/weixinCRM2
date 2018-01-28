@@ -17,9 +17,12 @@
 thead{
 background:#80d2f2;	
 }
-thead td{
+td{
 text-align:center;
 }
 .main-content{
 	width:100%;
+}
+.hide{
+	display:none;
 }
