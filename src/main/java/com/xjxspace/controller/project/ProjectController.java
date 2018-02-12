@@ -14,6 +14,7 @@ import com.xjxspace.mapper.project.ProjectMapper;
 import com.xjxspace.model.frame.ControllerHandler;
 import com.xjxspace.model.frame.Pagination;
 import com.xjxspace.model.project.Project;
+import com.xjxspace.util.Common;
 
 @Controller
 @RequestMapping("/project")
@@ -33,6 +34,7 @@ public class ProjectController extends ControllerHandler{
 		List<Project> projectList =mapper.getListwithPageInfo(params);
 		model.addAttribute("result", projectList);
 		return "project/pageList";
+		//return "project/list";
 	}
 	
 	@RequestMapping(value="/pageList",method=RequestMethod.GET)
@@ -42,6 +44,15 @@ public class ProjectController extends ControllerHandler{
 		model.addAttribute("pageInfo", pageInfo);
 		mapper.getListwithPageInfo(params);
 		return null;
+	}
+	
+	@RequestMapping(value="/getProjectLayerById",method=RequestMethod.GET)
+	public String getProjectLayerById(@RequestParam Map<String,Object> params,Model model){
+		List<Project> project = mapper.getListByCondition(params);
+		if(!Common.isEmpty(project)){
+			model.addAttribute("project", project.get(0));
+		}
+		return "project/editLayer";
 	}
 	
 	

@@ -26,3 +26,6 @@ text-align:center;
 .hide{
 	display:none;
 }
+.requiredText{
+	color:red;
+}

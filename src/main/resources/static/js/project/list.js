@@ -9,6 +9,7 @@
 				this.picHoverChangeOpacity();
 				this.changeSort();
 				this.displayOperation();
+				this.editProject();
 				getProgressBar();
 			},
 			/**
@@ -43,6 +44,37 @@
 			})
 			$('#projectTable').on('mouseleave','.projectNameContent',function(event){
 				$(this).find('img').addClass('hide');
+			})
+		},
+		editProject:function(){
+			$('.main-content').on('click','.edit',function(event){
+				var projectId = $(this).parents('tr').find('input[name="projectId"]').attr('data-projectId');
+				var _url=String.format("/project/getProjectLayerById?projectId={0}",projectId);
+				layer.open({
+					type:2,
+					title:'项目编辑',
+					shadeClose:true,
+					shade:0,
+					anim:1,
+					btn:['保存','取消'],
+					content:[_url,'auto'],
+					area:['780px','450px'],
+					'zIndex':'1000',
+					success:function(layero){
+						console.log('success');	
+					},
+					btn1:function(){
+						console.log('aa');
+					},
+					btn2:function(){
+						top.layer.close(top.project);
+					},
+					end:function(){
+						console.log('嗯对');
+					}
+					
+				});
+				//top.projectIndex = projectIndex;
 			})
 		}
 	}

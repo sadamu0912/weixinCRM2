@@ -91,11 +91,105 @@ var httpHelper = {
 			});
 		}
 	}
+String.format = function () {
+	if (arguments.length == 0)
+	return null;
+	var str = arguments[0];
+	for (var i = 1;i<arguments.length; i++){
+	var reg = new RegExp('\\{' + (i-1) +'\\}','gm');
+	str = str.replace(reg, arguments[i]);
+	}
+	return str;
+}	
+/**
+ * 是否为空
+ * @param data
+ * @returns
+ */
+function isNotEmpty(data){
+	if(null!=data&& undefined != data && data.length>0){
+		return true;
+	}
+	return false;
+}	
 
-		
-		
-		
-		
+function HashMap(){
+	//定义长虔
+	var length =0;
+	//创建一个对象
+	var obj = new Object();
+	/* 判断 Map 是否为空
+	*/
+	this.isEmpty = function(){
+	return length == 0;
+	};
+	/*
+	* 判断对象中是否包含给定 Key
+	*/
+	this.containsKey=function(key){
+	return (key in obj);
+	};
+	/* 判断对象中是否包含给定的 Value
+	*/
+	this.containsValue=function(value){
+	for(var key in  obj){
+		if(obj[key] == value){
+			return true;
+		}
+		return false;
+	}
+	}
+	
+	
+	this.put=function(key,value){
+		if(!this.containsKey(key)){
+			length++;
+		}
+		obj[key] = value;
+	};
+		/* 根据给定的 Key 获得 Value
+		*/
+	this.get=function(key){
+		return this.containsKey(key)?obj[key]:null;
+	};
+		/*
+		* 根据给定的 Key 删除一个值
+		*/
+		this.remove=function(key){
+		if(this.containsKey(key)&&(delete obj[key])){
+		length--;
+		}
+		};
+		/*获得 Map 中的所有 Value
+		*/
+		this.values=function(){
+		var _values= new Array();
+		for(var key in  obj){
+			_values.push(obj[key]);
+		}
+		return _values;
+		};
+		this.keySet= function(){
+			var _keys = new Array();
+			for(var key in obj){
+				_keys.push(key);
+			}
+			return _keys;
+		};
+			/*
+			* 获得 Map 的长度
+			*/
+			this.size = function(){
+			return length;
+			};
+			/*
+			*  清 ：SMap
+			*/
+			this.clear = function(){
+			length =0;
+			obj = new Object();
+			};
+}	
 		
 		
 		
