@@ -5,7 +5,7 @@ import com.xjxspace.model.frame.Record;
 
 public class Project  extends Record{
 	private static final long serialVersionUID =6931939270939159108L;
-	
+	public static final String className="project";
 	private String projectId;
 	private String projectName;
 	/**

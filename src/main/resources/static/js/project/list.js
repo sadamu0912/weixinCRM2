@@ -50,7 +50,7 @@
 			$('.main-content').on('click','.edit',function(event){
 				var projectId = $(this).parents('tr').find('input[name="projectId"]').attr('data-projectId');
 				var _url=String.format("/project/getProjectLayerById?projectId={0}",projectId);
-				layer.open({
+				top.project =layer.open({
 					type:2,
 					title:'项目编辑',
 					shadeClose:true,
@@ -60,21 +60,14 @@
 					content:[_url,'auto'],
 					area:['780px','450px'],
 					'zIndex':'1000',
-					success:function(layero){
-						console.log('success');	
-					},
 					btn1:function(){
-						console.log('aa');
+						layer.close(top.project);
 					},
 					btn2:function(){
-						top.layer.close(top.project);
-					},
-					end:function(){
-						console.log('嗯对');
+						layer.close(top.project);
 					}
 					
 				});
-				//top.projectIndex = projectIndex;
 			})
 		}
 	}

@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class Pagination implements Serializable {
 	private static final long  seriatVersionUID = 2648333339102999289L;
+	public static final String className="pageInfo";
 	private Integer start;
 	private Integer offset;
 	private Integer current;

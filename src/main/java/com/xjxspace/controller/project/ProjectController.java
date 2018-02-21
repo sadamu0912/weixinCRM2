@@ -30,7 +30,7 @@ public class ProjectController extends ControllerHandler{
 	public String getProjectSimpleList(@RequestParam Map<String,Object> params,Model model){
 		Integer count = mapper.getRecordsCount(params);
 		Pagination 	pageInfo = getPaginationInfo(params, count);
-		model.addAttribute("pageInfo", pageInfo);
+		model.addAttribute(Pagination.className, pageInfo);
 		List<Project> projectList =mapper.getListwithPageInfo(params);
 		model.addAttribute("result", projectList);
 		return "project/pageList";
@@ -41,7 +41,7 @@ public class ProjectController extends ControllerHandler{
 	public String getProjectListWithPage(@RequestParam Map<String,Object> params,Model model){
 		Integer count = mapper.getRecordsCount(params);
 		Pagination 	pageInfo = getPaginationInfo(params, count);
-		model.addAttribute("pageInfo", pageInfo);
+		model.addAttribute(Pagination.className, pageInfo);
 		mapper.getListwithPageInfo(params);
 		return null;
 	}
@@ -50,7 +50,7 @@ public class ProjectController extends ControllerHandler{
 	public String getProjectLayerById(@RequestParam Map<String,Object> params,Model model){
 		List<Project> project = mapper.getListByCondition(params);
 		if(!Common.isEmpty(project)){
-			model.addAttribute("project", project.get(0));
+			model.addAttribute(Project.className, project.get(0));
 		}
 		return "project/editLayer";
 	}

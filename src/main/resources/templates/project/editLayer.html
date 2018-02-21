@@ -7,6 +7,7 @@
 	<meta content="" name="description" />
 	<meta content="" name="author" />
     <link rel="stylesheet" th:href="@{/component/bootstrap/css/bootstrap.min.css}" />
+      <link rel="stylesheet" th:href="@{/css/frame/frame.css}" />	
 </head>
 <body>
 	<div class="main">
@@ -33,24 +34,25 @@
 								<label for="projectName">商家名称</label>
 								<input type="text" class="form-control" id="projectCustomerName" name="projectCustomerName" th:value="${project.projectCustomerName}"/>
 							</div>
+							<div class="row">
+								<span class="requiredText">*</span>
+								<label for="projectName">项目名称</label>
+								<input type="text" class="form-control" id="projectName" name="projectName" th:value="${project.projectName}"/>
+							</div>
 						</div>
 						<div class="col-sm-3">
-							<img th:src="${project.projectImage}" th:alt="${project.projectName}" width="180" height="200"  />
+							<img th:src="${project.projectImage}" th:alt="${project.projectName}" width="150" height="180"  />
 						</div>
 					</div>
 				
 				
-					<div class="row">
-						<span class="requiredText">*</span>
-						<label for="projectName">项目名称</label>
-						<input type="text" class="form-control" id="projectName" name="projectName" th:value="${project.projectName}"/>
-					</div>
+					
 				</div>
 			</form>
 	 </div>
 	  <script th:src="@{/component/jquery/jQuery-2.2.0.min.js}"></script>
      <script th:src="@{/component/bootstrap/js/bootstrap.min.js}"></script>
      <script th:src="@{/js/common.js}"></script>
-     <script th:src="@{/js/project/list.js}"></script>
+     <script th:src="@{/js/project/edit.js}"></script>
 </body>
 </html>

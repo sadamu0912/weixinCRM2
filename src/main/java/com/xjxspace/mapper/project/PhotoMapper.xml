@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xjxspace.mapper.project.PhotoMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.xjxspace.model.project.Photo">
+		<result column="increment_id" property="incrementId" />
+		<result column="photo_id" property="photoId" />
+		<result column="photo_name" property="photoName" />
+		<result column="photo_path" property="photoPath" />
+		<result column="photo_type_code" property="photoTypeCode" />
+		<result column="photo_type_name" property="photoTypeName" />
+		<result column="relation_id" property="relationId" />
+		<result column="relation_type" property="relationType" />
+		<result column="photo_size" property="photoSize" />
+		<result column="photo_desc" property="photoDesc" />
+		<result column="del" property="del" />
+		<result column="create_user_id" property="createUserId" />
+		<result column="create_time" property="createTime" />
+		<result column="update_user_id" property="updateUserId" />
+		<result column="update_time" property="updateTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        increment_id AS incrementId, photo_id AS photoId, photo_name AS photoName, photo_path AS photoPath, photo_type_code AS photoTypeCode, photo_type_name AS photoTypeName, relation_id AS relationId, relation_type AS relationType, photo_size AS photoSize, photo_desc AS photoDesc, del, create_user_id AS createUserId, create_time AS createTime, update_user_id AS updateUserId, update_time AS updateTime
+    </sql>
+
+
+  <!-- 获取所有记录-->	
+<select id="getAllRecords" resultMap="BaseResultMap">
+	select
+ 		<include refid="Base_Column_List"/>
+ 		from photo
+ 	</select>
+ 	
+ 	
+  <!-- 获取记录总数-->	
+ <select id="getRecordsCount" parameterType="HashMap" resultType="Integer">
+	select count(*) from photo
+	where 1=1
+	<if test="incrementId !=null">
+		and increment_id =#{incrementId}
+	</if>
+	<if test="photoId !=null">
+		and photo_id =#{photoId}
+	</if>
+	<if test="photoName !=null">
+		and photo_name =#{photoName}
+	</if>
+	<if test="photoPath !=null">
+		and photo_path =#{photoPath}
+	</if>
+	<if test="photoTypeCode !=null">
+		and photo_type_code =#{photoTypeCode}
+	</if>
+	<if test="photoTypeName !=null">
+		and photo_type_name =#{photoTypeName}
+	</if>
+	<if test="relationId !=null">
+		and relation_id =#{relationId}
+	</if>
+	<if test="relationType !=null">
+		and relation_type =#{relationType}
+	</if>
+	<if test="photoSize !=null">
+		and photo_size =#{photoSize}
+	</if>
+	<if test="photoDesc !=null">
+		and photo_desc =#{photoDesc}
+	</if>
+	<if test="del !=null">
+		and del =#{del}
+	</if>
+	<if test="createUserId !=null">
+		and create_user_id =#{createUserId}
+	</if>
+	<if test="createTime !=null">
+		and create_time =#{createTime}
+	</if>
+	<if test="updateUserId !=null">
+		and update_user_id =#{updateUserId}
+	</if>
+	<if test="updateTime !=null">
+		and update_time =#{updateTime}
+	</if>
+ 	</select>
+ 	 <!-- 根据条件查询数据-->	
+ 	<select id="getListByCondition" parameterType="HashMap" resultMap="BaseResultMap">
+ 	select
+ 		<include refid="Base_Column_List"/>
+ 		from photo
+ 		where 1=1
+	<if test="incrementId !=null">
+		and increment_id =#{incrementId}
+	</if>
+	<if test="photoId !=null">
+		and photo_id =#{photoId}
+	</if>
+	<if test="photoName !=null">
+		and photo_name =#{photoName}
+	</if>
+	<if test="photoPath !=null">
+		and photo_path =#{photoPath}
+	</if>
+	<if test="photoTypeCode !=null">
+		and photo_type_code =#{photoTypeCode}
+	</if>
+	<if test="photoTypeName !=null">
+		and photo_type_name =#{photoTypeName}
+	</if>
+	<if test="relationId !=null">
+		and relation_id =#{relationId}
+	</if>
+	<if test="relationType !=null">
+		and relation_type =#{relationType}
+	</if>
+	<if test="photoSize !=null">
+		and photo_size =#{photoSize}
+	</if>
+	<if test="photoDesc !=null">
+		and photo_desc =#{photoDesc}
+	</if>
+	<if test="del !=null">
+		and del =#{del}
+	</if>
+	<if test="createUserId !=null">
+		and create_user_id =#{createUserId}
+	</if>
+	<if test="createTime !=null">
+		and create_time =#{createTime}
+	</if>
+	<if test="updateUserId !=null">
+		and update_user_id =#{updateUserId}
+	</if>
+	<if test="updateTime !=null">
+		and update_time =#{updateTime}
+	</if>
+<if test="startTime !=null and endTime !=null">
+		and create_time between #{startTime} and #{endTime}
+	</if>
+	order by create_time desc
+ 	</select>
+ 	 <!-- 根据条件查询数据   有分页数据-->	
+ <select id="getListwithPageInfo" parameterType="HashMap" resultMap="BaseResultMap">
+ 	select
+ 		<include refid="Base_Column_List"/>
+ 		from photo
+ 		where 1=1
+ 	<if test="incrementId !=null">
+		and increment_id =#{incrementId}
+	</if>
+	<if test="photoId !=null">
+		and photo_id =#{photoId}
+	</if>
+	<if test="photoName !=null">
+		and photo_name =#{photoName}
+	</if>
+	<if test="photoPath !=null">
+		and photo_path =#{photoPath}
+	</if>
+	<if test="photoTypeCode !=null">
+		and photo_type_code =#{photoTypeCode}
+	</if>
+	<if test="photoTypeName !=null">
+		and photo_type_name =#{photoTypeName}
+	</if>
+	<if test="relationId !=null">
+		and relation_id =#{relationId}
+	</if>
+	<if test="relationType !=null">
+		and relation_type =#{relationType}
+	</if>
+	<if test="photoSize !=null">
+		and photo_size =#{photoSize}
+	</if>
+	<if test="photoDesc !=null">
+		and photo_desc =#{photoDesc}
+	</if>
+	<if test="del !=null">
+		and del =#{del}
+	</if>
+	<if test="createUserId !=null">
+		and create_user_id =#{createUserId}
+	</if>
+	<if test="createTime !=null">
+		and create_time =#{createTime}
+	</if>
+	<if test="updateUserId !=null">
+		and update_user_id =#{updateUserId}
+	</if>
+	<if test="updateTime !=null">
+		and update_time =#{updateTime}
+	</if>
+	<if test="startTime !=null and endTime !=null">
+		and create_time between #{startTime} and #{endTime}
+	</if>
+	order by create_time desc
+	<if test="pageInfo!=null">
+		limit #{pageInfo.start},#{pageInfo.offset}
+	</if>
+ </select>	
+  <!-- 新增记录-->	
+ <insert id="addRecord" parameterType="HashMap">
+ 	insert into photo
+ 		<trim prefix="(" suffix=")" suffixOverrides=",">
+	<if test="incrementId !=null">
+		 increment_id,
+	</if>
+	<if test="photoId !=null">
+		 photo_id,
+	</if>
+	<if test="photoName !=null">
+		 photo_name,
+	</if>
+	<if test="photoPath !=null">
+		 photo_path,
+	</if>
+	<if test="photoTypeCode !=null">
+		 photo_type_code,
+	</if>
+	<if test="photoTypeName !=null">
+		 photo_type_name,
+	</if>
+	<if test="relationId !=null">
+		 relation_id,
+	</if>
+	<if test="relationType !=null">
+		 relation_type,
+	</if>
+	<if test="photoSize !=null">
+		 photo_size,
+	</if>
+	<if test="photoDesc !=null">
+		 photo_desc,
+	</if>
+	<if test="del !=null">
+		 del,
+	</if>
+	<if test="createUserId !=null">
+		 create_user_id,
+	</if>
+	<if test="createTime !=null">
+		 create_time,
+	</if>
+	<if test="updateUserId !=null">
+		 update_user_id,
+	</if>
+	<if test="updateTime !=null">
+		 update_time,
+	</if>
+ 		</trim>
+ 		<trim prefix="values (" suffix=")" suffixOverrides=",">
+	<if test="incrementId !=null">
+		#{incrementId},
+	</if>
+	<if test="photoId !=null">
+		#{photoId},
+	</if>
+	<if test="photoName !=null">
+		#{photoName},
+	</if>
+	<if test="photoPath !=null">
+		#{photoPath},
+	</if>
+	<if test="photoTypeCode !=null">
+		#{photoTypeCode},
+	</if>
+	<if test="photoTypeName !=null">
+		#{photoTypeName},
+	</if>
+	<if test="relationId !=null">
+		#{relationId},
+	</if>
+	<if test="relationType !=null">
+		#{relationType},
+	</if>
+	<if test="photoSize !=null">
+		#{photoSize},
+	</if>
+	<if test="photoDesc !=null">
+		#{photoDesc},
+	</if>
+	<if test="del !=null">
+		#{del},
+	</if>
+	<if test="createUserId !=null">
+		#{createUserId},
+	</if>
+	<if test="createTime !=null">
+		#{createTime},
+	</if>
+	<if test="updateUserId !=null">
+		#{updateUserId},
+	</if>
+	<if test="updateTime !=null">
+		#{updateTime},
+	</if>
+ 		</trim>
+ </insert>
+   <!-- 更新记录 根据id-->	
+ <update id="updateRecordById" parameterType="HashMap">
+ 	update photo
+ 	<set>
+	<if test="incrementId !=null">
+		 increment_id =#{incrementId},
+	</if>
+	<if test="photoId !=null">
+		 photo_id =#{photoId},
+	</if>
+	<if test="photoName !=null">
+		 photo_name =#{photoName},
+	</if>
+	<if test="photoPath !=null">
+		 photo_path =#{photoPath},
+	</if>
+	<if test="photoTypeCode !=null">
+		 photo_type_code =#{photoTypeCode},
+	</if>
+	<if test="photoTypeName !=null">
+		 photo_type_name =#{photoTypeName},
+	</if>
+	<if test="relationId !=null">
+		 relation_id =#{relationId},
+	</if>
+	<if test="relationType !=null">
+		 relation_type =#{relationType},
+	</if>
+	<if test="photoSize !=null">
+		 photo_size =#{photoSize},
+	</if>
+	<if test="photoDesc !=null">
+		 photo_desc =#{photoDesc},
+	</if>
+	<if test="del !=null">
+		 del =#{del},
+	</if>
+	<if test="createUserId !=null">
+		 create_user_id =#{createUserId},
+	</if>
+	<if test="createTime !=null">
+		 create_time =#{createTime},
+	</if>
+	<if test="updateUserId !=null">
+		 update_user_id =#{updateUserId},
+	</if>
+	<if test="updateTime !=null">
+		 update_time =#{updateTime},
+	</if>
+ 	</set>
+ 	where 1=1 
+	and photo_id =#{photoId}	
+ </update>
+    <!--  根据id 批量更新记录-->	
+  <update id="updateRecordsByIds" parameterType="HashMap">
+ 	update photo
+ 	<set>
+	<if test="incrementId !=null">
+		 increment_id =#{incrementId},
+	</if>
+	<if test="photoId !=null">
+		 photo_id =#{photoId},
+	</if>
+	<if test="photoName !=null">
+		 photo_name =#{photoName},
+	</if>
+	<if test="photoPath !=null">
+		 photo_path =#{photoPath},
+	</if>
+	<if test="photoTypeCode !=null">
+		 photo_type_code =#{photoTypeCode},
+	</if>
+	<if test="photoTypeName !=null">
+		 photo_type_name =#{photoTypeName},
+	</if>
+	<if test="relationId !=null">
+		 relation_id =#{relationId},
+	</if>
+	<if test="relationType !=null">
+		 relation_type =#{relationType},
+	</if>
+	<if test="photoSize !=null">
+		 photo_size =#{photoSize},
+	</if>
+	<if test="photoDesc !=null">
+		 photo_desc =#{photoDesc},
+	</if>
+	<if test="del !=null">
+		 del =#{del},
+	</if>
+	<if test="createUserId !=null">
+		 create_user_id =#{createUserId},
+	</if>
+	<if test="createTime !=null">
+		 create_time =#{createTime},
+	</if>
+	<if test="updateUserId !=null">
+		 update_user_id =#{updateUserId},
+	</if>
+	<if test="updateTime !=null">
+		 update_time =#{updateTime},
+	</if>
+ 	</set>
+ 	where   photo_id in 
+	<foreach item="recordId" index="index" collection="photoIds" open="(" separator="," close=")">
+		#{photoId}
+	</foreach>	
+ </update>
+     <!--  批量新增记录   test==null 的地方需要  当integer的时候把'',换成0,  时间的换成 now(),-->	
+ <insert id="addRecordsBatch" parameterType="HashMap" useGeneratedKeys="true">
+ 	<selectKey resultType="int" keyProperty="increment_id" order="AFTER">
+ 		SELECT LAST_INSERT_ID()	
+ 	</selectKey>
+ 	insert into photo
+ 		(
+		 increment_id ,
+		 photo_id ,
+		 photo_name ,
+		 photo_path ,
+		 photo_type_code ,
+		 photo_type_name ,
+		 relation_id ,
+		 relation_type ,
+		 photo_size ,
+		 photo_desc ,
+		 del ,
+		 create_user_id ,
+		 create_time ,
+		 update_user_id ,
+		 update_time ,
+	) values
+	<foreach collection="list" item ="item" index ="index" separator=",">	
+	(
+<if test="incrementId !=null">increment_id =#{incrementId},</if><if test="incrementId ==null">'',</if>		
+<if test="photoId !=null">photo_id =#{photoId},</if><if test="photoId ==null">'',</if>		
+<if test="photoName !=null">photo_name =#{photoName},</if><if test="photoName ==null">'',</if>		
+<if test="photoPath !=null">photo_path =#{photoPath},</if><if test="photoPath ==null">'',</if>		
+<if test="photoTypeCode !=null">photo_type_code =#{photoTypeCode},</if><if test="photoTypeCode ==null">'',</if>		
+<if test="photoTypeName !=null">photo_type_name =#{photoTypeName},</if><if test="photoTypeName ==null">'',</if>		
+<if test="relationId !=null">relation_id =#{relationId},</if><if test="relationId ==null">'',</if>		
+<if test="relationType !=null">relation_type =#{relationType},</if><if test="relationType ==null">'',</if>		
+<if test="photoSize !=null">photo_size =#{photoSize},</if><if test="photoSize ==null">'',</if>		
+<if test="photoDesc !=null">photo_desc =#{photoDesc},</if><if test="photoDesc ==null">'',</if>		
+<if test="del !=null">del =#{del},</if><if test="del ==null">'',</if>		
+<if test="createUserId !=null">create_user_id =#{createUserId},</if><if test="createUserId ==null">'',</if>		
+<if test="createTime !=null">create_time =#{createTime},</if><if test="createTime ==null">'',</if>		
+<if test="updateUserId !=null">update_user_id =#{updateUserId},</if><if test="updateUserId ==null">'',</if>		
+<if test="updateTime !=null">update_time =#{updateTime},</if><if test="updateTime ==null">'',</if>		
+	)
+	</foreach>
+ </insert>
+</mapper>

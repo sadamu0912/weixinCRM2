@@ -64,3 +64,23 @@ CREATE TABLE `conf_menu` (
   `project_state_code` varchar(10) DEFAULT NULL COMMENT '状态code',
   PRIMARY KEY (`increment_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `photo` (
+  `increment_id` int(11) NOT NULL,
+  `photo_id` varchar(32) NOT NULL,
+  `photo_name` varchar(400) NOT NULL,
+  `photo_path` varchar(300) NOT NULL COMMENT '图片存储路径',
+  `photo_type_code` varchar(50) DEFAULT NULL,
+  `photo_type_name` varchar(300) DEFAULT NULL,
+  `relation_id` varchar(32) DEFAULT '' COMMENT '关联项目id',
+  `relation_type` varchar(50) DEFAULT NULL COMMENT '关联项目类型',
+  `photo_size` double(20,0) DEFAULT NULL COMMENT '单位是kb',
+  `photo_desc` varchar(500) DEFAULT NULL,
+  `del` int(5) NOT NULL,
+  `create_user_id` varchar(32) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `update_user_id` varchar(32) DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
