@@ -25,8 +25,14 @@ public class HomeController {
 	
 	@RequestMapping("/")
 	public String login(Model model,HttpServletRequest req) {
-		return "login";
+		return "index";
 	}
+
+	@RequestMapping("/upload")
+	public String uploadPage(Model model,HttpServletRequest req) {
+		return "upload";
+	}
+
 
 	@RequestMapping("/tabs")
 	public String tabs(Model model,HttpServletRequest req) {

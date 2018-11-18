@@ -1,3 +1,4 @@
+/*
 package com.xjxspace.filter;
 import java.io.IOException;
 import java.util.HashMap;
@@ -47,7 +48,7 @@ public class LoginFilter  implements Filter {
 		  if(userName!=null){
 			  Map<String,Object> params = new HashMap<String,Object>();
 			  params.put("userName", userName);
-			   users = userMapper.getUserByUserName(params);  
+			  // users = userMapper.getAllUser();
 		  }
 		 
 		
@@ -80,3 +81,4 @@ public class LoginFilter  implements Filter {
 
 
 }
+*/

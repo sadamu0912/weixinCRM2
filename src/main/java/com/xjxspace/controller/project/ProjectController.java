@@ -1,3 +1,4 @@
+/*
 package com.xjxspace.controller.project;
 
 import java.util.List;
@@ -23,9 +24,11 @@ public class ProjectController extends ControllerHandler{
 	@Autowired
 	private ProjectMapper mapper;
 	
-	/**
+	*/
+/**
 	 * 首页
-	 */
+	 *//*
+
 	@RequestMapping(value="/simpleList",method=RequestMethod.GET)
 	public String getProjectSimpleList(@RequestParam Map<String,Object> params,Model model){
 		Integer count = mapper.getRecordsCount(params);
@@ -56,12 +59,17 @@ public class ProjectController extends ControllerHandler{
 	}
 	
 	
-	/**
+	*/
+/**
 	 * 项目分页列表
 	 *//*
+*/
+/*
 	@RequestMapping(value="/pageList",method=RequestMethod.GET)
 	public String getProjectPageList(@RequestParam Map<String,Object> params,Model model){
 		return "project/pageList";
-	}*/
+	}*//*
+
 	
 }
+*/
