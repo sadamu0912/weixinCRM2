@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69ca6bab-fd58-4ba3-acdd-c282c9d0d572" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jumpmind_symmetric_symmetric_csv_3_5_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/util/CSVHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/util/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/util/ExcelUtilWithHSSF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/util/FileUploadHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjxspace/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjxspace/controller/project/PhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/controller/project/PhotoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjxspace/controller/project/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/controller/project/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjxspace/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/filter/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjxspace/mapper/system/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/mapper/system/MenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjxspace/mapper/system/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/mapper/system/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjxspace/mapper/system/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/mapper/system/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjxspace/model/system/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjxspace/model/system/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="weixinCRM2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +22,12 @@
     <session id="68807963">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,113 +72,7 @@
     <favorites_list name="weixinCRM2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xjxspace/controller/project/PhotoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xjxspace/util/CSVHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#434#444#0" expanded="true" />
-                <element signature="e#1641#1642#0" expanded="true" />
-                <element signature="e#1675#1676#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xjxspace/util/ExcelReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/hssf/usermodel/HSSFCell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#47510#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/Cell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/CellStyle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7425">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/CellType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-904">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/format/CellFormat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="230" column="18" lean-forward="true" selection-start-line="230" selection-start-column="18" selection-end-line="230" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jumpmind/symmetric/symmetric-csv/3.5.19/symmetric-csv-3.5.19-sources.jar!/org/jumpmind/symmetric/csv/CsvReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="1187" selection-start-line="1187" selection-end-line="1187" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -297,184 +179,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjxspace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjxspace" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjxspace" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjxspace" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjxspace" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjxspace" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjxspace" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjxspace" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixinCRM2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.poi:poi:3.17" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.poi:poi:3.17" type="70bed36:NamedLibraryElementNode" />
-              <item name="poi-3.17.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.poi:poi:3.17" type="70bed36:NamedLibraryElementNode" />
-              <item name="poi-3.17.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="poi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.poi:poi:3.17" type="70bed36:NamedLibraryElementNode" />
-              <item name="poi-3.17.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="poi" type="462c0819:PsiDirectoryNode" />
-              <item name="hssf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.poi:poi:3.17" type="70bed36:NamedLibraryElementNode" />
-              <item name="poi-3.17.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="poi" type="462c0819:PsiDirectoryNode" />
-              <item name="ss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.poi:poi:3.17" type="70bed36:NamedLibraryElementNode" />
-              <item name="poi-3.17.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="poi" type="462c0819:PsiDirectoryNode" />
-              <item name="ss" type="462c0819:PsiDirectoryNode" />
-              <item name="format" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixinCRM2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.poi:poi:3.17" type="70bed36:NamedLibraryElementNode" />
-              <item name="poi-3.17.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="poi" type="462c0819:PsiDirectoryNode" />
-              <item name="ss" type="462c0819:PsiDirectoryNode" />
-              <item name="usermodel" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -501,7 +206,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jdktest" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -666,12 +371,15 @@
       <workItem from="1528301977275" duration="300000" />
       <workItem from="1528600803118" duration="1390000" />
       <workItem from="1528614958028" duration="745000" />
-      <workItem from="1542511727002" duration="16687000" />
+      <workItem from="1542511727002" duration="18751000" />
+      <workItem from="1543068529902" duration="739000" />
+      <workItem from="1543112733750" duration="618000" />
+      <workItem from="1543327158097" duration="514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20809000" />
+    <option name="totallyTimeSpent" value="24744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,9 +392,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49196786" weight="0.24614395" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49196786" weight="0.2525707" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -716,7 +423,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49196786" visible="true" weight="0.24614395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49196786" visible="true" weight="0.2525707" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -728,7 +435,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.24966262" />
-      <window_info anchor="bottom" id="Debug" order="6" visible="true" weight="0.37516868" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.37516868" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32974428" />
@@ -811,11 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1971">
           <caret line="139" column="30" lean-forward="true" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
-          <folding>
-            <element signature="e#857#1976#0" />
-            <element signature="e#2004#3056#0" />
-            <element signature="e#3084#3986#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,9 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#2296#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,49 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="23" column="26" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
-            <element signature="e#1857#1858#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
-            <element signature="e#1939#1940#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -995,28 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,9 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="33" column="59" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1065,59 +696,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jumpmind/symmetric/symmetric-csv/3.5.19/symmetric-csv-3.5.19-sources.jar!/org/jumpmind/symmetric/csv/CsvReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="1187" selection-start-line="1187" selection-end-line="1187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/format/CellFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="230" column="18" lean-forward="true" selection-start-line="230" selection-start-column="18" selection-end-line="230" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/CellStyle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7425">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/CellType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-904">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xjxspace/controller/project/PhotoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="567">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1126,34 +711,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xjxspace/util/CSVHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="1701">
           <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#434#444#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/hssf/usermodel/HSSFCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="891">
           <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#47510#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/CellStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/usermodel/CellType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17-sources.jar!/org/apache/poi/ss/format/CellFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5211">
+          <caret line="230" column="18" selection-start-line="230" selection-start-column="18" selection-end-line="230" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jumpmind/symmetric/symmetric-csv/3.5.19/symmetric-csv-3.5.19-sources.jar!/org/jumpmind/symmetric/csv/CsvReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29835">
+          <caret line="1187" selection-start-line="1187" selection-end-line="1187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xjxspace/util/ExcelReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="999">
+          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
